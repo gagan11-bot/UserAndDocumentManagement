@@ -44,6 +44,8 @@ Run the migration to add these above mentioned tables to Sql server
 
 For Upload Document API created seprate DTO model to handle upload file
 
+Used CICD Piper for deployment
+
 After all Above code pushed code in Git hub
 ------------------------
 > TESTING THROUGH POSTMAN
