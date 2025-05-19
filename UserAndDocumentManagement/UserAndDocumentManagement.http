@@ -1,0 +1,6 @@
+@UserAndDocumentManagement_HostAddress = http://localhost:5166
+
+GET {{UserAndDocumentManagement_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
