@@ -21,6 +21,7 @@ public class AdminController : ControllerBase
     [HttpGet("dashboard")]
     public IActionResult Dashboard()
     {
+
         return Ok("Welcome, Admin!");
     }
 
