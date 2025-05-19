@@ -45,3 +45,43 @@ Run the migration to add these above mentioned tables to Sql server
 For Upload Document API created seprate DTO model to handle upload file
 
 After all Above code pushed code in Git hub
+------------------------
+> TESTING THROUGH POSTMAN
+
+To Register New User
+> Method - Post (Method Type)
+https://localhost:7170/api/Auth/register (Url to hit such as localhost, Controller name
+and API name)
+Body > Raw > JSON
+{
+  "email": "admin1@gmail.com",
+  "password": "Admin123$%^",
+  "role": "admin"
+}
+
+----------------
+Login API
+> Method - Post
+https://localhost:7170/api/Auth/login
+Body > Raw > JSON
+{
+  "email": "admin1@gmail.com",
+  "password": "Admin123$%^"
+}
+---------------
+Upload Document
+> Method - Post
+https://localhost:7170/api/documents/upload
+Authorization > Type > Bearer Token > TokenID
+Body > Form-Data
+          Value                                           |      Content Type
+File >  FileName   (Select File from drop down list)      |     File
+Title >  TitleName                                        |     text/plain
+
+--------------
+Get Ingestion History API
+> Method - Get
+https://localhost:7170/api/IngestionManagement/history/1
+Authorization > Type > Bearer Token > TokenID
+--------------
+
